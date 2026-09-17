@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AprendeTI — Aprenda tecnologia do zero com aulas simples e acessíveis. Projeto extensionista UNINTER de inclusão digital.">
+  <meta name="keywords" content="aprender tecnologia, informática básica, HTML, CSS, JavaScript, inclusão digital, UNINTER">
+  <title>AprendeTI — Aprenda Tecnologia do Zero</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" id="logo-home">
+        <img src="img/logo.svg" alt="AprendeTI Logo">
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="index.html" class="active" id="nav-inicio">Início</a>
+        <a href="#sobre" id="nav-sobre">Sobre</a>
+        <a href="#contato" id="nav-contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BANNER HERO -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <span class="hero-badge">Atividade Extensionista · UNINTER</span>
+      <h1>Aprenda Tecnologia do Zero</h1>
+      <p>
+        Aulas simples e acessíveis sobre informática, internet, programação
+        e segurança digital — para quem está começando agora.
+      </p>
+    </div>
+  </section>
+
+  <!-- BUSCA E FILTROS -->
+  <section class="search-section">
+    <div class="container">
+      <div class="search-wrapper">
+        <label for="campo-busca" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden">Buscar aulas</label>
+        <input
+          type="search"
+          id="campo-busca"
+          placeholder="Buscar por título, categoria ou palavra-chave..."
+          autocomplete="off"
+        >
+        <span class="search-icon" aria-hidden="true">🔍</span>
+      </div>
+
+      <!-- Botões de categoria gerados pelo JS -->
+      <div class="filter-bar" id="filter-bar" role="group" aria-label="Filtrar por categoria"></div>
+    </div>
+  </section>
+
+  <!-- GRID DE CARDS -->
+  <main class="cards-section">
+    <div class="container">
+      <p class="section-title" id="result-count">Carregando aulas…</p>
+      <div class="cards-grid" id="cards-grid" role="list">
+        <!-- Cards gerados pelo script.js -->
+      </div>
+    </div>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer" id="sobre">
+    <div class="container">
+      <img src="img/logo.svg" alt="AprendeTI" class="footer-logo">
+      <p>
+        <strong>AprendeTI</strong> — Projeto de Extensão Universitária
+      </p>
+      <p>Atividade Extensionista · <strong>UNINTER</strong></p>
+      <hr class="footer-divider">
+      <p id="contato">
+        Objetivo: promover a <strong>inclusão digital</strong> ensinando tecnologia
+        de forma simples e acessível para todos.
+      </p>
+      <p style="margin-top:12px; opacity:.6;">
+        &copy; <span id="ano-rodape"></span> AprendeTI · Desenvolvido com HTML, CSS e JavaScript puro
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById('ano-rodape').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

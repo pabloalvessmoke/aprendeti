@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aula AprendeTI">
+  <title>Carregando… — AprendeTI</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" id="logo-home-aula">
+        <img src="img/logo.svg" alt="AprendeTI Logo">
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="index.html" id="nav-inicio-aula">← Todas as aulas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CABEÇALHO DA AULA -->
+  <div class="aula-header">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="aula-breadcrumb" aria-label="Caminho">
+        <a href="index.html" id="breadcrumb-inicio">Início</a>
+        <span aria-hidden="true">›</span>
+        <span id="aula-breadcrumb-categoria">Categoria</span>
+      </nav>
+
+      <span class="aula-category-badge" id="aula-categoria-badge">Categoria</span>
+      <h1 class="aula-title" id="aula-titulo">Carregando…</h1>
+      <p class="aula-desc" id="aula-desc"></p>
+
+      <!-- Palavras-chave -->
+      <div class="keywords-bar" id="keywords-bar"></div>
+    </div>
+  </div>
+
+  <!-- CORPO DA AULA -->
+  <main class="aula-body">
+    <div class="container">
+      <article class="aula-content" id="aula-conteudo">
+        <p>Carregando conteúdo…</p>
+      </article>
+
+      <!-- Navegação entre aulas -->
+      <nav class="lesson-nav" id="lesson-nav" aria-label="Navegar entre aulas"></nav>
+    </div>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container">
+      <img src="img/logo.svg" alt="AprendeTI" class="footer-logo">
+      <p><strong>AprendeTI</strong> — Atividade Extensionista · UNINTER</p>
+      <hr class="footer-divider">
+      <p style="opacity:.6">
+        &copy; <span id="ano-rodape-aula"></span> AprendeTI · HTML, CSS e JavaScript puro
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/aula.js"></script>
+  <script>
+    document.getElementById('ano-rodape-aula').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Dependências de Node (se usar npx serve)
+node_modules/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
